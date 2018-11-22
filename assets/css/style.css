@@ -1,0 +1,101 @@
+:root {
+    --theme-color:rgb(82, 82, 202);
+} 
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    padding: 10px 100px 0px;
+    /* color: rgb(128, 54, 54); */
+    color: var(--theme-color);
+}
+
+#nav-bar-custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
+    align-items: center;
+}
+
+a {
+    font-family: Raleway;
+    color:var(--theme-color);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 10px;
+    /*border-bottom: 1px solid;*/
+    margin: 20px;
+
+}
+a:hover{
+    text-decoration: none;
+    color:green;
+}
+
+i {
+    padding-right: 4px;
+}
+
+a:hover > i {
+    animation-name: jiggle;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 920px) {
+    #nav-bar-custom {
+        justify-content: space-around;
+    }
+
+    a {
+        font-size: 25px;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2{
+        font-size: 30px;
+
+    }
+    #nav-bar-custom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a {
+        font-size: 15px;
+        margin: 0;
+        border-bottom: none;
+    }
+}
+
+@keyframes fadein {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes jiggle {
+    48%, 62% {
+        transform: scale(1.0, 1.0)
+    }
+    50% {
+        transform: scale(1.1, 0.9)
+    }
+    56% {
+        transform: scale(0.9, 1.1) translate(0, -5px)
+    }
+    59% {
+        transform: scale(1.0, 1.0) translate (0, -3px)
+    }
+}
