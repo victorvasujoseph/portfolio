@@ -1,2 +1,4 @@
 # portfolio
-Victor's Joseph Porfolio
+Victor Joseph's Porfolio
+
+https://victorvasujoseph.github.io/portfolio/
