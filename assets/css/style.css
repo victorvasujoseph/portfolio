@@ -1,182 +1,202 @@
 :root {
-    --theme-color:rgb(82, 82, 202);
-    --hover-color: rgb(80, 142, 248);
-} 
+  --theme-color: rgb(82, 82, 202);
+  --hover-color: rgb(80, 142, 248);
+}
 /* background-color: rgb(201, 219, 248); */
-body{   
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2{
-    font-family: 'Pacifico', cursive;
-    font-size: 50px;
-    padding: 10px 100px 0px;
-    color: var(--theme-color);
+h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  padding: 10px 100px 0px;
+  color: var(--theme-color);
 }
-h2:hover{
-    color:var(--hover-color);
+h2:hover {
+  color: var(--hover-color);
 }
 
 #nav-bar-custom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* animation: 1s fadein 0.5s forwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* animation: 1s fadein 0.5s forwards;
     opacity: 0; */
-    align-items: center;
+  align-items: center;
 }
 
-#bio{
-    height:100vh;
-    align-items: center;
-    margin-top:20px;
-    
+#bio {
+  height: 100vh;
+  align-items: center;
+  margin-top: 20px;
 }
 
-img{
-    max-width: 100%;
-    max-height: 100%;
+img {
+  max-width: 100%;
+  max-height: 100%;
 
-    /* border-radius:20px; */
-    border-color:rgb(201, 219, 248);
-    border-width: 1px;
-    border-style: solid;
-
+  /* border-radius:20px; */
+  border-color: rgb(201, 219, 248);
+  border-width: 1px;
+  border-style: solid;
 }
 
-#row-1{
-    height:20vh;
+#row-1 {
+  height: 20vh;
 }
 
-#row-2{
-    font-family: 'Pacifico', cursive;
-    font-size:35px;
-    background-color: rgb(201, 219, 248);
-    height:40vh;
-    animation: 1s fadein 0.5s forwards;
-    opacity: 0;
-}
-#row-3{
-    font-family: 'Pacifico', cursive;
-    font-size:20px;
-    height:20vh;
-    color: var(--theme-color);
+#row-2 {
+  font-family: "Pacifico", cursive;
+  font-size: 35px;
+  background-color: rgb(201, 219, 248);
+  height: 40vh;
+  animation: 1s fadein 0.5s forwards;
+  opacity: 0;
 }
 
-#scroll-arow{
-    animation-name: shakeUp;
-    animation-duration: 4s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
+#row-3 {
+  height: 20vh;
+  color: var(--theme-color);
+}
 
+#scroll-arow {
+  animation-name: shakeUp;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
 }
 
 a {
-    font-family: 'Pacifico', cursive;
-    /* font-family: Raleway; */
-    color:var(--theme-color);
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    padding-right: 10px;
-    margin: 20px;
-
+  font-family: "Pacifico", cursive;
+  /* font-family: Raleway; */
+  color: var(--theme-color);
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 10px;
+  margin: 20px;
 }
-a:hover{
-    text-decoration: none;
-    color:var(--hover-color);
+a:hover {
+  text-decoration: none;
+  color: var(--hover-color);
 }
 
-h2:hover, a:hover > i {
-    animation-name: jiggle;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
+h2:hover,
+a:hover > i {
+  animation-name: jiggle;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
 }
 
 i {
-    padding-right: 4px;
+  padding-right: 4px;
 }
 
 /*Footer Section*/
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--theme-color);
-    color: #fff;
-    padding: 20px 0;
-    animation: 1s fadein 0.5s forwards;
-    opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--theme-color);
+  color: #fff;
+  padding: 20px 0;
+  animation: 1s fadein 0.5s forwards;
+  opacity: 0;
 }
 
-
 footer p {
-    text-transform: uppercase;
-    font-size: 14px;
-    /* opacity: 0.6; */
-    align-self: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  /* opacity: 0.6; */
+  align-self: center;
 }
 
 @media screen and (max-width: 920px) {
-    h2{
-        font-size: 28px;
+  h2 {
+    font-size: 28px;
+  }
+  #nav-bar-custom {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    }
-    #nav-bar-custom {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    a {
-        font-size: 25px;
-        margin: 0;
-    }
+#row-2 {
+    font-family: "Pacifico";
+    font-size: 20px;
+  }
+  
+
+  a {
+    font-size: 25px;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    h2{
-        font-size: 20px;
+  h2 {
+    font-size: 20px;
+  }
+  #nav-bar-custom {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    }
-    #nav-bar-custom {
-        flex-direction: column;
-        align-items: center;
-    }
+  #row-2 {
+    font-family: "Pacifico";
+    font-size: 20px;
+  }
 
-    a {
-        font-size: 12px;
-        margin: 0;
-        border-bottom: none;
-    }
+  a {
+    font-size: 12px;
+    margin: 0;
+    border-bottom: none;
+  }
 }
 
 @keyframes fadein {
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes jiggle {
-    48%, 62% {
-        transform: scale(1.0, 1.0)
-    }
-    50% {
-        transform: scale(1.1, 0.9)
-    }
-    56% {
-        transform: scale(0.9, 1.1) translate(0, -5px)
-    }
-    59% {
-        transform: scale(1.0, 1.0) translate (0, -3px)
-    }
+  48%,
+  62% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  56% {
+    transform: scale(0.9, 1.1) translate(0, -5px);
+  }
+  59% {
+    transform: scale(1, 1) translate (0, -3px);
+  }
 }
 
-@keyframes shakeUp { 
-    0%, 100% {transform: translateY(0);} 
-    10%, 30%, 50%, 70%, 90% {transform: translateY(-10px);} 
-    20%, 40%, 60%, 80% {transform: translateY(10px);} 
- }
+@keyframes shakeUp {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(10px);
+  }
+}
