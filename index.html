@@ -11,17 +11,19 @@
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
+        <!--Navigation Bar-->
         <div>
-            <nav id="nav-bar-custom">
+            <nav id="nav-bar-custom" class="fixed-top">
                 <h2>Victor Joseph</h2>
                 <div>
-                    <a href=""><i class="fa fa-home"></i>My Bio</a>
+                    <a id="my-bio-link" href="#bio"><i class="fa fa-home"></i>My Bio</a>
                     <a href=""><i class="fa fa-question"></i>Family</a>
                     <a href=""><i class="fa fa-phone"></i>Contact</a>
                 </div>
             </nav>
         </div>
-        <div id="bio" class="container-fluid">
+        <!--Main Page-->
+        <div id="main" class="container-fluid">
             <div id="row-1" class="row">
                 <div id="bio-empty-header" class="col"></div>
             </div>
@@ -42,12 +44,40 @@
                     <div class="col-1 d-flex flex-column justify-content-end">
                             <i id="scroll-arow" class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
                     </div>
-                    
                     <!-- <div id="bio-quote" class="col-6 d-flex flex-column justify-content-center">
                             <p>“Remember that the happiest people are not those getting more, but those giving more.”</p>
                             <h5>-H. Jackson Brown, Jr.</h5>
                     </div> -->
+            </div>
+        </div>
+
+        <div id="bio" class="container-fluid">
+                <div id="row-icons" class="row"> 
+                        <div class="col-1 icons"> <img src="./assets/image/bootstrap-stack.png"></div> 
+                        <div class="col-1 icons"><img src="./assets/image/react.png"></div> 
+                        <div class="col-1 icons"><img src="./assets/image/express.png"></div> 
+                        <div class="col-1 icons"><img src="./assets/image/node-2.png"></div> 
+                        <div class="col-1 icons"> <img src="./assets/image/java.png"></div> 
+                        <div class="col-1 icons"><img src="./assets/image/mongodb.png"></div> 
+                        <div class="col-1 icons"><img src="./assets/image/js-2.png"></div> 
+                        <div class="col-1 icons"><img src="./assets/image/html5-2.jpg"></div> 
+                        <div class="col-1 icons"> <img src="./assets/image/handlebars_1078661.png"></div> 
+                        <div class="col-1 icons"><img src="./assets/image/css.png"></div> 
+                        <div class="col-1 icons"><img src="./assets/image/python-512.png"></div> 
+                        <div class="col-1 icons"><img src="./assets/image/sql.svg"></div> 
                 </div>
+                <div id="row-2" class="row">    
+                        <div id="bio-box-1" class=" col-2"></div>
+                        <div id="bio-box-2" class="col-10 d-flex flex-column justify-content-center ">
+                                <h3 >Hello, I'm Victor Joseph</h3>
+                                <p>Engineering Manager - Full Stack Developer - Passionate Leader </p>
+                        </div>
+                        <!-- <div id="bio-box-3" class="col-3"></div> -->
+                        <!-- <div id="bio-box-4" class="col-2">
+                                <img src="./assets/image/IMG_4858.jpg" >
+                        </div> -->
+                </div>
+
         </div>
         
         <footer>
@@ -57,5 +87,6 @@
          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./assets/js/script.js"></script>
     </body>
 </html>
