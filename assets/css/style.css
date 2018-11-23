@@ -1,6 +1,7 @@
 :root {
   --theme-color: rgb(82, 82, 202);
   --hover-color: rgb(80, 142, 248);
+  --main-background: rgb(201, 219, 248);
 }
 /* background-color: rgb(201, 219, 248); */
 body {
@@ -26,7 +27,23 @@ h2:hover {
   /* animation: 1s fadein 0.5s forwards;
     opacity: 0; */
   align-items: center;
+  /* box-shadow: 2px 2px 5px var(--main-background); */
+  opacity: 0.9;
+  /* background-color: rgb(201, 219, 248); */
 }
+
+#nav-bar-custom a {
+    font-family: "Pacifico", cursive;
+    /* font-family: Raleway; */
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 10px;
+    margin: 20px;
+    color: var(--theme-color);
+    
+  }
 
 #main {
   height: 100vh;
@@ -43,23 +60,57 @@ h2:hover {
   border-style: solid;
 } */
 
-#row-1 {
-  height: 20vh;
+#row-1{
+  height: 10vh;
 }
 
-#row-2 {
+#row-2{
+    background-image: url("../image/2334.jpg");
+    height: 50vh;
+}
+
+#row-3 {
   font-family: "Pacifico", cursive;
   font-size: 35px;
   background-color: rgb(201, 219, 248);
-  height: 40vh;
+  height: 30vh;
   animation: 1s fadein 0.5s forwards;
   opacity: 0;
 }
 
-#row-3 {
-  height: 20vh;
+#row-4 {
+  height: 5vh;
   color: var(--theme-color);
 }
+
+#row-5{
+    height: 15vh;
+  }
+
+#bio{
+    height:70vh;
+}
+
+#row-bio {
+    margin:15px;
+    height:40vh;
+}
+#row-bio img {
+  max-width: 100%;
+  max-height: 100%;
+  border-color: rgb(201, 219, 248);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px var(--main-background);
+}
+
+#row-bio-bottom{
+    height:10vh;
+}
+#row-7{
+    height: 30vh;
+  }
 
 #scroll-arow {
   animation-name: shakeUp;
@@ -68,16 +119,7 @@ h2:hover {
   animation-iteration-count: infinite;
 }
 
-a {
-  font-family: "Pacifico", cursive;
-  /* font-family: Raleway; */
-  color: var(--theme-color);
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  padding-right: 10px;
-  margin: 20px;
-}
+
 a:hover {
   text-decoration: none;
   color: var(--hover-color);
@@ -108,10 +150,6 @@ footer {
   opacity: 0;
 }
 
-#bio{
-    height:70vh;
-}
-
 footer p {
   text-transform: uppercase;
   font-size: 14px;
@@ -120,8 +158,8 @@ footer p {
 }
 
 .icons{
-    height:120px;
-    width: 120px;
+    height:70px;
+    width: 70px;
 }
 
 #row-icons img {
