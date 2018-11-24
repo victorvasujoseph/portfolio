@@ -95,6 +95,14 @@ h2:hover {
     margin:15px;
     height:40vh;
 }
+
+#icon-row{
+    box-shadow: 2px 2px 5px var(--main-background);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(201, 219, 248);
+}
+
 #row-bio img {
   max-width: 100%;
   max-height: 100%;
