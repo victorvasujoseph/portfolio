@@ -24,6 +24,8 @@ h2:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom:10px;
+
   /* animation: 1s fadein 0.5s forwards;
     opacity: 0; */
   align-items: center;
@@ -45,65 +47,43 @@ h2:hover {
     
   }
 
-#main {
-  height: 100vh;
+#main-div {
+  height: 100px;
   align-items: center;
   margin-top: 20px;
 }
 
-/* img {
-  max-width: 100%;
-  max-height: 100%;
-
-  border-color: rgb(201, 219, 248);
-  border-width: 1px;
-  border-style: solid;
-} */
-
-#row-1{
-  height: 10vh;
-}
-
-#row-2{
+#theme-image{
     background-image: url("../image/2334.jpg");
-    height: 50vh;
+    height: 450px;
 }
 
-#row-3 {
+#intro {
   font-family: "Pacifico", cursive;
   font-size: 35px;
   background-color: rgb(201, 219, 248);
-  height: 30vh;
+  height: 300px;
   animation: 1s fadein 0.5s forwards;
   opacity: 0;
 }
 
-#row-4 {
-  height: 5vh;
-  color: var(--theme-color);
-}
-
-#row-5{
-    height: 15vh;
+.row-space{
+    height: 75px;
   }
 
-#bio{
-    height:70vh;
-}
-
-#row-bio {
+#bio {
     margin:15px;
-    height:40vh;
+    height:300px;
 }
 
-#icon-row{
+#icon-group{
     box-shadow: 2px 2px 5px var(--main-background);
     border-width: 2px;
     border-style: solid;
     border-color: rgb(201, 219, 248);
 }
 
-#row-bio img {
+#bio img {
   max-width: 100%;
   max-height: 100%;
   border-color: rgb(201, 219, 248);
@@ -113,11 +93,16 @@ h2:hover {
   box-shadow: 2px 2px 5px var(--main-background);
 }
 
+#bio p {
+    font-family: Raleway; 
+    font-size:17px;
+}
+
 #row-bio-bottom{
     height:10vh;
 }
 #row-7{
-    height: 30vh;
+    height: 200px;
   }
 
 #scroll-arow {
@@ -125,6 +110,10 @@ h2:hover {
   animation-duration: 4s;
   animation-timing-function: ease-in;
   animation-iteration-count: infinite;
+  color: var(--theme-color);
+  position:absolute;
+    bottom:15px;
+    right:15px;
 }
 
 
@@ -170,9 +159,15 @@ footer p {
     width: 70px;
 }
 
-#row-icons img {
+#icon-group img {
     max-width: 100%;
     max-height: 100%;
+}
+
+#contributions-header{
+    height: 150px;
+    background-color: var(--main-background);
+    font-family: "Pacifico", cursive;
 }
 
 @media screen and (max-width: 920px) {
