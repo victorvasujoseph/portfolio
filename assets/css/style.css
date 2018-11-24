@@ -134,6 +134,13 @@ a:hover > i {
   padding-right: 4px;
 }
 
+#contact-form{
+  padding-left:30px;
+  border-left-color: rgb(201, 219, 248);
+  border-left-width: 2px;
+  border-left-style: solid;
+}
+
 /*Footer Section*/
 
 footer {
@@ -164,7 +171,7 @@ footer p {
     max-height: 100%;
 }
 
-#contributions-header{
+#contributions-header,#contact-header{
     height: 150px;
     background-color: var(--main-background);
     font-family: "Pacifico", cursive;
