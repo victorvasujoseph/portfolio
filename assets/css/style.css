@@ -3,6 +3,11 @@
   --hover-color: rgb(80, 142, 248);
   --main-background: rgb(201, 219, 248);
 }
+
+.clearfix {
+  overflow: auto;
+}
+
 /* background-color: rgb(201, 219, 248); */
 body {
   margin: 0;
@@ -60,7 +65,7 @@ h2:hover {
 
 #bio {
     margin:15px;
-    height:300px;
+    /* height:300px; */
 }
 
 #icon-group{
@@ -78,6 +83,8 @@ h2:hover {
   border-style: solid;
   border-radius: 7px;
   box-shadow: 2px 2px 5px var(--main-background);
+  margin-right:20px;
+  margin-bottom:20px;
 }
 
 #bio p {
@@ -227,6 +234,10 @@ footer p {
     font-size: 14px;
     padding-right: 3px;
     margin: 7px;
+  }
+
+  #bio p {
+    font-size:12px;
   }
 
   #intro h3 {
