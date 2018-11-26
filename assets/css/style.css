@@ -87,7 +87,7 @@ h2:hover {
   margin-bottom:20px;
 }
 
-#bio p {
+#bio p, #ending-quote p {
     font-family: Raleway; 
     font-size:17px;
 }
@@ -95,8 +95,9 @@ h2:hover {
 #row-bio-bottom{
     height:10vh;
 }
-#row-7{
-    height: 200px;
+#expert{
+    margin-top:20px;
+    /* height: 200px; */
   }
 
 #scroll-arow {
@@ -211,19 +212,45 @@ footer p {
   }
 
   #intro h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .row-space{
     height: 25px;
   }
 
+  #contact-form{
+    padding-left:0;
+    margin-top:30px;
+    padding-top:30px;
+    margin-bottom:30px;
+    padding-bottom:30px;
+
+    border-left-color: none;
+    border-left-width: none;
+    border-left-style: none;
+
+    border-top-color: rgb(201, 219, 248);
+    border-top-width: 2px;
+    border-top-style: solid;
+
+    border-bottom-color: rgb(201, 219, 248);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+
+  }
+
+  #contact-body{
+    margin:10px;
+  }
+
+
 }
 
 
 @media screen and (max-width: 400px) {
   h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   #nav-bar-custom {
     flex-direction: column;
@@ -237,16 +264,61 @@ footer p {
   }
 
   #bio p {
-    font-size:12px;
+    font-size:14px;
   }
 
   #intro h3 {
-    font-size: 10px;
+    font-size: 16px;
   }
 
   .row-space{
     height: 15px;
   }
+
+  #contact-form{
+    padding-left:0;
+    margin-top:30px;
+    padding-top:30px;
+    margin-bottom:30px;
+    padding-bottom:30px;
+
+    border-left-color: none;
+    border-left-width: none;
+    border-left-style: none;
+
+    border-top-color: rgb(201, 219, 248);
+    border-top-width: 2px;
+    border-top-style: solid;
+
+    border-bottom-color: rgb(201, 219, 248);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+
+  }
+
+  #contact-body{
+    margin:10px;
+  }
+  #ending-quote p{
+    font-size:14px;
+  }
+
+  #expert{
+    font-family: Raleway; 
+    margin-top:30px;
+    font-size: 16px;
+    /* height: 200px; */
+  }
+
+  #contributions-header,#contact-header{
+    height: 100px;
+    background-color: var(--main-background);
+    font-family: "Pacifico", cursive;
+}
+
+#contributions-header h3, #contact-header h3{
+  font-size:16px;
+}
 
 }
 
