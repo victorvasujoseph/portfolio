@@ -59,6 +59,11 @@ h2:hover {
   opacity: 0;
 }
 
+#intro h3 {
+  font-size: 22px;
+}
+
+
 .row-space{
     height: 75px;
   }
@@ -87,7 +92,7 @@ h2:hover {
   margin-bottom:20px;
 }
 
-#bio p, #ending-quote p {
+#bio p, #ending-quote p, #contribution-quote p {
     font-family: Raleway; 
     font-size:17px;
 }
@@ -95,6 +100,11 @@ h2:hover {
 #row-bio-bottom{
     height:10vh;
 }
+
+.card a {
+  margin-left:20px;
+}
+
 #expert{
     margin-top:20px;
     /* height: 200px; */
@@ -107,8 +117,8 @@ h2:hover {
   animation-iteration-count: infinite;
   color: var(--theme-color);
   position:absolute;
-    bottom:15px;
-    right:15px;
+  bottom:15px;
+  right:15px;
 }
 
 
@@ -176,10 +186,12 @@ footer p {
   h2 {
     font-size: 25px;
   }
+
   #nav-bar-custom {
     flex-direction: column;
     align-items: center;
   }
+
   #nav-bar-custom a {
     font-size: 15px;
     padding-right: 5px;
@@ -187,7 +199,7 @@ footer p {
   }
 
   .row-space{
-    height: 30px;
+    height: 55px;
   }
 
   #intro h3 {
@@ -206,17 +218,17 @@ footer p {
   }
 
   #nav-bar-custom a {
-    font-size: 18px;
+    font-size: 12px;
     padding-right: 5px;
-    margin: 10px;
+    margin: 7px;
   }
 
   #intro h3 {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .row-space{
-    height: 25px;
+    height: 35px;
   }
 
   #contact-form{
@@ -244,6 +256,26 @@ footer p {
     margin:10px;
   }
 
+  #ending-quote p{
+    font-size:14px;
+  }
+
+  #expert{
+    font-family: Raleway; 
+    margin-top: 30px;
+    font-size: 16px;
+    /* height: 200px; */
+  }
+
+  #contributions-header,#contact-header{
+    height: 100px;
+    background-color: var(--main-background);
+    font-family: "Pacifico", cursive;
+  }
+
+  #contributions-header h3, #contact-header h3{
+    font-size:16px;
+  }
 
 }
 
@@ -272,7 +304,7 @@ footer p {
   }
 
   .row-space{
-    height: 15px;
+    height: 25px;
   }
 
   #contact-form{
@@ -314,11 +346,11 @@ footer p {
     height: 100px;
     background-color: var(--main-background);
     font-family: "Pacifico", cursive;
-}
+  }
 
-#contributions-header h3, #contact-header h3{
-  font-size:16px;
-}
+  #contributions-header h3, #contact-header h3{
+    font-size:16px;
+  }
 
 }
 
